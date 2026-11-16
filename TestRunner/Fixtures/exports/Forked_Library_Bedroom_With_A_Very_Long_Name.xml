@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blueprint>
+	<meta>
+		<gameVersion>1.6.4630 rev1266</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>some.blueprints.fork</li>
+		</modIds>
+		<modSteamIds>
+			<li>2009463077</li>
+			<li>0</li>
+			<li>0</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Blueprints fork</li>
+		</modNames>
+	</meta>
+	<Blueprint>
+		<BuildableThings>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-2, 0, -1)</Position>
+				<Category>Walls</Category>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(2, 0, -1)</Position>
+				<Category>Walls</Category>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(oops)</Position>
+			</li>
+			<li>
+				<ThingDef>Bed</ThingDef>
+				<Stuff>WoodLog</Stuff>
+				<Rotation>1</Rotation>
+				<Category>Furniture</Category>
+			</li>
+			<li>
+				<ThingDef>TorchLamp</ThingDef>
+				<Position>(-2, 0, 1)</Position>
+				<Category>Lighting</Category>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+		</BuildableThings>
+		<Name>Forked_Library_Bedroom_With_A_Very_Long_Name</Name>
+		<Size>(7, 5)</Size>
+		<Category>Bedrooms</Category>
+		<Author>someone</Author>
+	</Blueprint>
+</Blueprint>

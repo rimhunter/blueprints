@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blueprint>
+	<meta>
+		<gameVersion>1.5.4104 rev435</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>fluffy.blueprints</li>
+		</modIds>
+		<modSteamIds>
+			<li>2009463077</li>
+			<li>0</li>
+			<li>708455313</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Blueprints</li>
+		</modNames>
+	</meta>
+	<Blueprint>
+		<BuildableThings>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, -1)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, 1)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-2, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-2, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-1, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-1, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Door</ThingDef>
+				<Stuff>WoodLog</Stuff>
+				<Position>(0, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(0, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(1, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(1, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(2, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(2, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(3, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(3, 0, -1)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(3, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(3, 0, 1)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(3, 0, 2)</Position>
+			</li>
+			<li>
+				<ThingDef>Bed</ThingDef>
+				<Stuff>WoodLog</Stuff>
+				<Position>(1, 0, 0)</Position>
+				<Rotation>1</Rotation>
+			</li>
+			<li>
+				<ThingDef>TorchLamp</ThingDef>
+				<Position>(-2, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>PlantPot</ThingDef>
+				<Stuff>WoodLog</Stuff>
+				<Position>(-2, 0, -1)</Position>
+			</li>
+			<li>
+				<ThingDef>TorchWallLamp</ThingDef>
+				<Position>(-1, 0, 1)</Position>
+			</li>
+			<li>
+				<ThingDef>TorchWallLamp</ThingDef>
+				<Position>(1, 0, -1)</Position>
+				<Rotation>2</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-1, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-1, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-1, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-1, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(0, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(0, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(0, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(0, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(2, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(2, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(2, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(2, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(2, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(3, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+		</BuildableThings>
+		<Name>Fluffy_Room</Name>
+		<Size>(7, 5)</Size>
+	</Blueprint>
+</Blueprint>

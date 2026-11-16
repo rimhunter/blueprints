@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Fluffy.Blueprints.CouldNotPlaceParts>{0}: {1} of {2} parts could not be placed here and were left out.</Fluffy.Blueprints.CouldNotPlaceParts>
+	<Fluffy.Blueprints.PartWaitsForFoundation>{0}: 1 part stands on a foundation, such as gravship substructure, that is not built yet. Place {0} again once it is built.</Fluffy.Blueprints.PartWaitsForFoundation>
+	<Fluffy.Blueprints.WaitsForFoundation>{0}: {1} parts stand on a foundation, such as gravship substructure, that is not built yet. Place {0} again once it is built.</Fluffy.Blueprints.WaitsForFoundation>
+	<Fluffy.Blueprints.PartsLeftOut>{0}: {1} parts were left out because this game cannot use them: {2}.</Fluffy.Blueprints.PartsLeftOut>
+	<Fluffy.Blueprints.MissingBuilding>building {0} is not in this game</Fluffy.Blueprints.MissingBuilding>
+	<Fluffy.Blueprints.MissingFloor>floor {0} is not in this game</Fluffy.Blueprints.MissingFloor>
+	<Fluffy.Blueprints.MissingStuff>material {0} is not in this game</Fluffy.Blueprints.MissingStuff>
+	<Fluffy.Blueprints.PartLeftOut>{0}: 1 part was left out because this game cannot use it: {2}.</Fluffy.Blueprints.PartLeftOut>
+	<Fluffy.Blueprints.UnreadableNoName>a part names no building or floor</Fluffy.Blueprints.UnreadableNoName>
+	<Fluffy.Blueprints.UnreadablePosition>{0}, its position {1} could not be read</Fluffy.Blueprints.UnreadablePosition>
+	<Fluffy.Blueprints.UnreadableRotation>{0}, its rotation {1} could not be read</Fluffy.Blueprints.UnreadableRotation>
+	<Fluffy.Blueprints.NoBlueprintNode>the file holds no Blueprint node</Fluffy.Blueprints.NoBlueprintNode>
+	<Fluffy.Blueprints.NoPartsListInFile>the file holds no list of parts</Fluffy.Blueprints.NoPartsListInFile>
+	<Fluffy.Blueprints.NoPartsList>{0} has no list of parts in this save, so it is empty.</Fluffy.Blueprints.NoPartsList>
+	<Fluffy.Blueprints.FileUnreadable>The blueprint file {0} could not be read: {1}</Fluffy.Blueprints.FileUnreadable>
+</LanguageData>

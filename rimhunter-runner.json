@@ -1,0 +1,13 @@
+{
+  "worldSeed": "blueprints-runner-world",
+  "packageId": "rimhunter.blueprints",
+  "modAssembly": "Blueprints.dll",
+  "modProject": "Source/Blueprints.csproj",
+  "runnerProject": "TestRunner/Source/BlueprintsTestRunner.csproj",
+  "runnerPackageId": "rimhunter.blueprints.testrunner",
+  "runnerAssembly": "BlueprintsTestRunner.dll",
+  "runnerDir": "TestRunner",
+  "scenarioDirs": ["TestRunner/Source"],
+  "guiPassOnUnity": true,
+  "stageExclude": ["Source", "Tests", "scripts", "*.proj", "global.json", "_PublisherPlus.xml", "LICENSE", ".gitignore", "rimhunter-runner.json", "modinfo.json", "Readme.md"]
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Blueprint>
+	<meta>
+		<gameVersion>1.5.4104 rev435</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>fluffy.blueprints</li>
+		</modIds>
+		<modSteamIds>
+			<li>2009463077</li>
+			<li>0</li>
+			<li>708455313</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Blueprints</li>
+		</modNames>
+	</meta>
+	<Blueprint>
+		<BuildableThings>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlocksGranite</Stuff>
+				<Position>(-3, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>Wall</ThingDef>
+				<Stuff>BlueprintsExtra_Ingot</Stuff>
+				<Position>(-2, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>BlueprintsExtra_Shrine</ThingDef>
+				<Position>(-1, 0, 0)</Position>
+			</li>
+			<li>
+				<ThingDef>TorchLamp</ThingDef>
+			</li>
+			<li>
+				<ThingDef>PlantPot</ThingDef>
+				<Stuff>WoodLog</Stuff>
+				<Position>(1, 0, 0)</Position>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-3, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-2, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>BlueprintsExtra_Tile</TerrainDef>
+				<Position>(-1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>BlueprintsExtra_Tile</TerrainDef>
+				<Position>(0, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+		</BuildableThings>
+		<Name>Returning_Mod</Name>
+		<Size>(5, 3)</Size>
+	</Blueprint>
+</Blueprint>

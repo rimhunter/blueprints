@@ -1,0 +1,48 @@
+// Copyright Karel Kroeze, 2021-2021.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Reflection.Emit;
+using HarmonyLib;
+using Verse;
+
+namespace Blueprints {
+    [HarmonyPatch(typeof(GizmoGridDrawer), nameof(GizmoGridDrawer.DrawGizmoGridFor))]
+    public class Patch_GizmoGridDrawer_DrawGizmoGridFor {
+        public static MethodInfo listAdd = AccessTools.Method(typeof(List<Gizmo>), nameof(List<Gizmo>.Add));
+
+        public static MethodInfo clearInfo = AccessTools.Method(typeof(List<Gizmo>), nameof(List<Gizmo>.Clear));
+        public static FieldInfo  gizmoList = AccessTools.Field(typeof(GizmoGridDrawer), "gizmoList");
+
+        public static MethodInfo blueprintGetter = AccessTools
+                                                  .Property(typeof(Patch_GizmoGridDrawer_DrawGizmoGridFor),
+                                                            nameof(BlueprintCopy))
+                                                  .GetGetMethod();
+
+        public static Command_CreateBlueprintCopyFromSelected BlueprintCopy =>
+            new Command_CreateBlueprintCopyFromSelected();
+
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> _instructions) {
+            List<CodeInstruction> instructions = _instructions.ToList();
+            int injected = 0;
+
+            for (int i = 0; i < instructions.Count; i++) {
+                yield return instructions[i];
+
+                if (i > 0 && instructions[i - 1].LoadsField(gizmoList)
+                          && instructions[i].Calls(clearInfo)) {
+                    injected++;
+                    yield return new CodeInstruction(OpCodes.Ldsfld, gizmoList);
+                    yield return new CodeInstruction(OpCodes.Call, blueprintGetter);
+                    yield return new CodeInstruction(OpCodes.Callvirt, listAdd);
+                }
+            }
+
+            if (injected != 1) {
+                throw new InvalidOperationException(
+                    $"Blueprints: expected to inject the copy gizmo once into GizmoGridDrawer.DrawGizmoGridFor, injected {injected} times");
+            }
+        }
+    }
+}

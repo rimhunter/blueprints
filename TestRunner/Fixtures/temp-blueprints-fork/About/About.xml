@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>blueprints1.6-TEMP</name>
+    <author>test fixture</author>
+    <packageId>dw.defi.fluffy.blueprints.fork</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <description>Test-only stand-in that carries another Blueprints build's package id. It has no code. Never shipped.</description>
+</ModMetaData>

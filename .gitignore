@@ -1,0 +1,8 @@
+Assemblies/
+/bin/
+/obj/
+Tests/**/bin/
+Tests/**/obj/
+/TestRunner/obj/
+/dist/
+__pycache__/

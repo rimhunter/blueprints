@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Blueprints extra defs (test only)</name>
+    <author>rimhunter</author>
+    <packageId>rimhunter.blueprints.testextradefs</packageId>
+    <supportedVersions>
+        <li>1.6</li>
+        <li>1.7</li>
+    </supportedVersions>
+    <description>Test-only mod with one modded building, one modded floor and one modded stuff. A scenario saves and exports blueprints with it on, then loads them with it off. Never shipped.</description>
+</ModMetaData>

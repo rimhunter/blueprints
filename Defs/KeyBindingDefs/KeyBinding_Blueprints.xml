@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <KeyBindingDef ParentName="ArchitectBase">
+    <defName>Blueprint_Flip</defName>
+    <label>flip blueprint</label>
+    <defaultKeyCodeA>F</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef>
+    <defName>Blueprint_Copy</defName>
+    <label>copy selection as blueprint (hold Ctrl)</label>
+    <category>SelectionMisc</category>
+    <defaultKeyCodeA>C</defaultKeyCodeA>
+  </KeyBindingDef>
+</Defs>

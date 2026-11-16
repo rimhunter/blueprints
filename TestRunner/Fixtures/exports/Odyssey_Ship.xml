@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Blueprint>
+	<meta>
+		<gameVersion>1.7.5011 rev24</gameVersion>
+		<modIds>
+			<li>brrainz.harmony</li>
+			<li>ludeon.rimworld</li>
+			<li>ludeon.rimworld.odyssey</li>
+			<li>rimhunter.blueprints</li>
+			<li>rimhunter.blueprints.testrunner</li>
+		</modIds>
+		<modSteamIds>
+			<li>0</li>
+			<li>0</li>
+			<li>3022790</li>
+			<li>0</li>
+			<li>0</li>
+		</modSteamIds>
+		<modNames>
+			<li>Harmony</li>
+			<li>Core</li>
+			<li>Odyssey</li>
+			<li>Blueprints (Continued)</li>
+			<li>Blueprints scenario runner (test only)</li>
+		</modNames>
+	</meta>
+	<Blueprint>
+		<BuildableThings>
+			<li>
+				<ThingDef>TorchLamp</ThingDef>
+				<Position>(-5, 0, -5)</Position>
+			</li>
+			<li>
+				<ThingDef>SmallThruster</ThingDef>
+				<Position>(4, 0, -2)</Position>
+			</li>
+			<li>
+				<ThingDef>PilotConsole</ThingDef>
+				<Position>(-3, 0, 2)</Position>
+				<Rotation>1</Rotation>
+			</li>
+			<li>
+				<ThingDef>ChemfuelTank</ThingDef>
+				<Position>(3, 0, 1)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(-5, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(-4, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(-3, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(-2, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(-1, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(0, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(1, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(2, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(3, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(4, 0, 4)</Position>
+			</li>
+			<li>
+				<ThingDef>GravshipHull</ThingDef>
+				<Stuff>Steel</Stuff>
+				<Position>(5, 0, 4)</Position>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(-4, 0, -5)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, -3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, -2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, -1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>WoodPlankFloor</TerrainDef>
+				<Position>(1, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, 0)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, 1)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, 2)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, 3)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-5, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-4, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-3, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-2, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(-1, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(0, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(1, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(2, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(3, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(4, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+			<li>
+				<TerrainDef>Substructure</TerrainDef>
+				<Position>(5, 0, 4)</Position>
+				<Rotation>200</Rotation>
+			</li>
+		</BuildableThings>
+		<Name>Ship</Name>
+		<Size>(13, 11)</Size>
+	</Blueprint>
+</Blueprint>

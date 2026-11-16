@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>BlueprintsTest_PlainLinked</defName>
+        <label>blueprints test window</label>
+        <description>Test-only building: link flags like a window from a mod, but a plain single-texture graphic.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/PlantPot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkFlags>
+                <li>Wall</li>
+            </linkFlags>
+        </graphicData>
+        <size>(1,1)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>200</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>5</Steel>
+        </costList>
+        <designationCategory>Structure</designationCategory>
+        <uiOrder>9991</uiOrder>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+import importlib.machinery, importlib.util, os, subprocess, sys, tempfile, unittest
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def load():
+    path = os.path.join(HERE, "scripts", "publish-github")
+    loader = importlib.machinery.SourceFileLoader("publish_github", path)
+    spec = importlib.util.spec_from_loader("publish_github", loader)
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+    return module
+
+
+def git(repo, *args, input=None):
+    return subprocess.run(
+        ["git", "-C", repo, "-c", "user.name=t", "-c", "user.email=t@example.com", *args],
+        check=True, capture_output=True, input=input).stdout.decode()
+
+
+def write(repo, path, text, mode=0o644):
+    full = os.path.join(repo, path)
+    os.makedirs(os.path.dirname(full), exist_ok=True)
+    with open(full, "w") as f:
+        f.write(text)
+    os.chmod(full, mode)
+
+
+class TreeBuilder(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.repo = os.path.join(self.tmp.name, "repo")
+        os.makedirs(self.repo)
+        git(self.repo, "init", "-q", "-b", "main")
+        write(self.repo, "About/About.xml", "<ModMetaData/>\n")
+        write(self.repo, "Source/Mod.cs", "class Mod {}\n")
+        write(self.repo, "scripts/package", "#!/bin/sh\n", 0o755)
+        write(self.repo, "Assemblies/kept.txt", "tracked despite .gitignore\n")
+        write(self.repo, ".gitignore", "Assemblies/\n")
+        write(self.repo, ".gitea/workflows/ci.yml", "name: CI\n")
+        write(self.repo, ".gitmodules", "[submodule \"TestRunner/shared\"]\n")
+        write(self.repo, "TestRunner/Source/Scenario.cs", "class S {}\n")
+        git(self.repo, "add", "-f", ".")
+        git(self.repo, "update-index", "--add", "--cacheinfo",
+            "160000,56b370cc43bf0908df08da11d1811af5684ef3d3,TestRunner/shared")
+        git(self.repo, "commit", "-q", "-m", "init")
+        self.commit = git(self.repo, "rev-parse", "HEAD").strip()
+        self.dest = os.path.join(self.tmp.name, "public")
+        self.mod = load()
+        self.files = self.mod.build_public_tree(self.repo, self.commit, self.dest)
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def present(self, path):
+        return os.path.lexists(os.path.join(self.dest, path))
+
+    def test_private_paths_are_left_out(self):
+        self.assertFalse(self.present(".gitea"))
+        self.assertFalse(self.present(".gitmodules"))
+        self.assertFalse(self.present("TestRunner/shared"))
+
+    def test_mod_side_runner_files_are_kept(self):
+        self.assertTrue(self.present("TestRunner/Source/Scenario.cs"))
+
+    def test_tracked_file_matched_by_gitignore_is_kept(self):
+        self.assertTrue(self.present("Assemblies/kept.txt"))
+        self.assertIn("Assemblies/kept.txt", self.files)
+
+    def test_returned_files_are_exactly_the_tree_on_disk(self):
+        on_disk = sorted(
+            os.path.relpath(os.path.join(d, f), self.dest)
+            for d, _, fs in os.walk(self.dest) for f in fs)
+        self.assertEqual(sorted(self.files), on_disk)
+
+    def test_blob_hashes_equal_the_gitea_commit(self):
+        for path in self.files:
+            expected = git(self.repo, "rev-parse", "%s:%s" % (self.commit, path)).strip()
+            actual = subprocess.run(
+                ["git", "hash-object", os.path.join(self.dest, path)],
+                check=True, capture_output=True).stdout.decode().strip()
+            self.assertEqual(expected, actual, path)
+
+    def test_executable_bit_is_kept(self):
+        self.assertTrue(os.access(os.path.join(self.dest, "scripts/package"), os.X_OK))
+
+    def test_verify_fails_loudly_on_a_changed_file(self):
+        write(self.dest, "Source/Mod.cs", "class Mod { tampered }\n")
+        with self.assertRaises(SystemExit):
+            self.mod.verify_tree(self.repo, self.commit, self.dest)
+
+    def test_verify_fails_loudly_on_an_extra_file(self):
+        write(self.dest, "extra.txt", "x\n")
+        with self.assertRaises(SystemExit):
+            self.mod.verify_tree(self.repo, self.commit, self.dest)
+
+    def test_verify_passes_on_the_built_tree(self):
+        self.mod.verify_tree(self.repo, self.commit, self.dest)
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=1)
